@@ -49,7 +49,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.VERSION }},${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:latest
 
-      - name: Checkout to manifests repo
+      - name: Checkout to Manifests Repo
         uses: actions/checkout@v3
         with:
           repository: 'Practicas-DevOps/ping-pong-app'
