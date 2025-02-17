@@ -68,7 +68,7 @@ jobs:
       - run: pip install -r ./scripts/requirements.txt
 
       - name: Set Image Tag
-        run: python ./scripts/set_tag.py -y ./overlays/dev/${{ env.REPO_NAME }}/kustomization.yaml -t ${{ env.VERSION }}
+        run: python ./scripts/set_tag.py -y ./overlays/dev/${{ env.REPO_NAME }}/kustomization.yaml -n ${{ env.VERSION }}
 
       - name: Commit and push changes
         run: |
