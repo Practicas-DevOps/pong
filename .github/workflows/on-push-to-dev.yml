@@ -55,7 +55,7 @@ jobs:
           repository: 'Practicas-DevOps/ping-pong-app'
           ref: 'main'
           token: ${{ secrets.PAT }}
-      - name: Setup git config
+      - name: Setup Git Config
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "<>"
